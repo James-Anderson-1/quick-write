@@ -48,4 +48,41 @@ A blog post site built using Vue.JS, Express.JS and Postgres
 ```
 
 ## Server Initilsation
-to be continued
+1. Enter into `server` directory
+2. Use `npm init` to creat an empty `package.json` file. Make sure to use all the defaults provided.Should look like the following:
+```
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
+```
+3. Install `nodemone` and `eslint`  into the vaccant project. Using the `npm install nodemon eslint` command
+4. Update the `scripts` section of teh `package.json` to include the commands to use `nodemon` and `eslint` when in development.
+5. Add a new directory in `server` called `src`
+6. Inside `src` add the starting javascript file of `app.js`
+7. Initlise the eslint library  in the server by doing `npm init @eslint/config` and pcik the strictest one.
+8. Use the advanced `JavaScript` method of `import/export`
+9. Pick the `Vue.js` frame work
+10. Our project does not use typescript
+11. This is a backend service so the code will run in `node`
+12. Use the satandard style guid
+13. Have the configuration be in a `JavaScript` format.
+14. Allow the `init` to install any dependencies it needs.
+15. It should have succefully created a `.eslintrc.js` file
+16. Observe the empty rules section which can be populated.
+---
+1. in `server/package.json` use the following scripts.
+```
+"scripts": {
+    "start": "node node_modules/nodemon/bin/nodemon.js src/app.js --exec",
+    "lint": "eslint **/*.js",
+    "lint-fixer": "eslint --fix **/*.js"
+  }
+```
