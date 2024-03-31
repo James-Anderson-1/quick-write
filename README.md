@@ -11,6 +11,7 @@ A blog post site built using Vue.JS, Express.JS and Postgres
 6. Starting with npm version `v10.5.0`
 7. Starting with eslint version `v8.57.0`
 8. Starting with vue (using vue-cli) version `v5.0.8`
+9. Using the postman app to test the endpoints
 
 
 ## Project Initlisation Steps
@@ -86,3 +87,16 @@ A blog post site built using Vue.JS, Express.JS and Postgres
     "lint-fixer": "eslint --fix **/*.js"
   }
 ```
+---
+1. Now that we have amnually set up `nodemon` and `eslint` to be used in out dev enviroment we can move onto the packages we will be using in the backend program.
+2. These packages are: 
+* express
+* body-parser
+* cors
+* moran 
+3. To install this use the following command: `npm install express body-parser cors morgan`
+4. Note how these have now been added to the `package.json` dependencies.
+5. To import these remeber we are using advance version of JS (i.e `ES6`). Hence we need to make sure to follow the correct imports.
+![alt text](image.png) - Some may work some may not. Also depends on how Babel converst it back into the old ways. For now we are not using babel (see the package.json file) but this has hit us in the past so just be aware.
+
+## Backend API testing
