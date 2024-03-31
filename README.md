@@ -47,6 +47,26 @@ A blog post site built using Vue.JS, Express.JS and Postgres
       "eol-last": ["error", "always"]
     }
 ```
+---
+10. Add the `axious` package to the `client` by running the `npm install axios` command in the `/client` directroy.
+11. Again observe it being added to the `client` `package.json` file
+12. Add a `client/src/service` directory to the prject.
+13. inside the `services` folder add a file called `Api.js`
+---
+14. In `Api.js` use the `ES6` style of importing to get the `axious` package. Example: 
+```
+import axious from 'axious';
+```
+15. Now add a `export` statement (i.e following `ES6` rules)
+```
+export default () => {
+    return axious.create({
+        baseURL: `http://localhost:8081/`
+    })
+}
+```
+---
+16. Add in an Authenicator class. Start by creating a new file called `services/AuthenticationService.js`
 
 ## Server Initilsation
 1. Enter into `server` directory
