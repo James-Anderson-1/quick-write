@@ -64,9 +64,16 @@ export default () => {
         baseURL: `http://localhost:8081/`
     })
 }
+
 ```
 ---
 16. Add in an Authenicator class. Start by creating a new file called `services/AuthenticationService.js`
+---
+17. Use the modern way of using vue-router
+![alt text](image-1.png)
+18. The client can now use the vue router
+![alt text](image-2.png)
+not that this is a way to do a single page web application
 
 ## Server Initilsation
 1. Enter into `server` directory
