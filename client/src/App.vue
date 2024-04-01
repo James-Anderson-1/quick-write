@@ -1,10 +1,28 @@
+
 <template>
-  <nav>
+  <div>
+    <nav>
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </nav>
-  <router-view/>
+  <!-- <router-view/> -->
+    <header>
+      <!-- <h1>Welcome to My App</h1> -->
+    </header>
+    <main>
+      <router-view />
+    </main>
+    <footer>
+      <!-- <p>&copy; 2024 My App</p> -->
+    </footer>
+  </div>
 </template>
+
+<script>
+export default {
+  // Your component options go here
+};
+</script>
 
 <style>
 #app {
