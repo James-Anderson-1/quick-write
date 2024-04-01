@@ -1,7 +1,7 @@
 <template>
   <div class="about">
     <img alt="Vue logo" src="../assets/logo.png">
-    <AboutWrite msg="This is an About Page"/>
+    <AboutWrite msg="This is an About Page used to Test Netlify"/>
   </div>
 </template>
 
