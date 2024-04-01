@@ -73,7 +73,7 @@ export default () => {
 ![alt text](image-1.png)
 18. The client can now use the vue router
 ![alt text](image-2.png)
-not that this is a way to do a single page web application
+19. note that this is a way to do a single page web application with mutliple pages.
 
 ## Server Initilsation
 1. Enter into `server` directory
