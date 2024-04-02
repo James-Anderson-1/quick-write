@@ -1,7 +1,7 @@
 <template>
     <div class="hello">
+        <img src= "../assets/cat.png" >
       <h1>{{ msg }}</h1>
-      <img src= imgPath >
       <br>
       <form>
         <input type="text" placeholder="user.name"> <br>
@@ -34,5 +34,8 @@ export default {
   }
   a {
     color: #42b983;
+  }
+  img {
+    border-radius: 40px;
   }
   </style>
