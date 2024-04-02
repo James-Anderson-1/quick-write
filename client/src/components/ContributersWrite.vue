@@ -1,11 +1,7 @@
 <template>
     <div class="hello">
       <h1>{{ msg }}</h1>
-      <p>
-        Enter your username and password to get started,<br>
-        or play a a game:
-        <a href="https://vim-adventures.com/" target="_blank" rel="noopener">vim-adventures</a>.
-      </p>
+      <img src= imgPath >
       <br>
       <form>
         <input type="text" placeholder="user.name"> <br>
@@ -18,7 +14,8 @@
 export default {
   name: 'RegisterWrite',
   props: {
-    msg: String
+    msg: String,
+    imgPath: String
   }
 };
 </script>
