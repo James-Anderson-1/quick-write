@@ -1,13 +1,7 @@
 <template>
     <div class="hello">
-        <img src= "../assets/cat.png" >
-      <h1>{{ msg }}</h1>
-      <br>
-      <form>
-        <input type="text" placeholder="user.name"> <br>
-        <input type="password" placeholder="super.secret"> <br>
-        <button>Register</button>
-      </form>
+        <h1>{{ msg }}</h1>
+    <img src= "../assets/cat.png" >
     </div>
   </template>
 <script>
