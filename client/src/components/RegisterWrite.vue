@@ -24,10 +24,10 @@ export default {
       email: 'john.do@email.com',
       password: 'super-secret'
     };
-  }, 
+  },
   methods: {
     register () {
-      console.log("Register button was clicked with: ", this.email, " and ", this.password)
+      console.log('Register button was clicked with: ', this.email, ' and ', this.password);
     }
   },
   watch: {
