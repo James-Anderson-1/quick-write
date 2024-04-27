@@ -8,20 +8,36 @@
       </p>
       <br>
       <form>
-        <input type="text" placeholder="user.name"> <br>
-        <input type="password" placeholder="super.secret"> <br>
+        <input type="email" placeholder="user.name@domain" v-model="email"> <br>
+        <input type="password" placeholder="super.secret" v-model="password"> <br>
         <button>Register</button>
       </form>
     </div>
   </template>
+
 <script>
+// import { watch } from 'vue';
+
 export default {
-  name: 'RegisterWrite',
-  props: {
-    msg: String
+  data () {
+    return  {
+      email: 'john.do@email.com',
+      password: 'super-secret'
+    };
+  },
+  watch: {
+    email (value) {
+      console.log('Email has changed. New value: ', value);
+    }
   }
 };
+// name: 'RegisterWrite',
+// props: {
+//   msg: String
+// }
+
 </script>
+
   <!-- Add "scoped" attribute to limit CSS to this component only -->
   <style scoped>
   h3 {
