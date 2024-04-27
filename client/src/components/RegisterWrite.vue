@@ -32,7 +32,7 @@ export default {
         password: this.password
       });
       console.log('Register button was clicked with: ', this.email, ' and ', this.password);
-      console.log(`Response from backend: ${response}`);
+      console.log(`Response from backend: ${response.data.email}`);
     }
   },
   watch: {
