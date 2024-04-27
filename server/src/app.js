@@ -7,8 +7,7 @@ const bodyParser = require('body-parser')
 const cors = require('cors')
 const morgan = require('morgan')
 
-
-console.log("Right Before sequelizer Stuff............")
+console.log('Right Before sequelizer Stuff............')
 const { sequelize } = require('./models')
 
 const app = express()

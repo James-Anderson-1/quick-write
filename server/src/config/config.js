@@ -6,8 +6,8 @@ module.exports = {
     password: process.env.DB_PASSWORD || 'gold',
     options: {
       host: process.env.HOST || 'localhost',
-      port: process.env.DB_PORT || "5433",
-      dialect: process.env.DIALECT || 'postgres',
+      port: process.env.DB_PORT || '5433',
+      dialect: process.env.DIALECT || 'postgres'
       // storage: '99999'
     }
   }

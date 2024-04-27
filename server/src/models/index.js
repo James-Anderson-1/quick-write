@@ -4,14 +4,25 @@ const Sequelize = require('sequelize')
 const config = require('../config/config')
 const db = {}
 
-const sequelize = new Sequelize(
-  config.db.database,
-  config.db.username, // changed from config.db.user
-  config.db.password,
-  config.db.options,
-//   config.db.port,
-//   config.db.host
-)
+let sequelize
+
+if (process.env.DEPLOYED === 'True') {
+  sequelize = new Sequelize('postgresql://postgres:fOhlCynBOOsamqIJwWpQenFFiUzmJOSS@roundhouse.proxy.rlwy.net:25224/railway')
+} else {
+  sequelize = new Sequelize(
+    config.db.database,
+    config.db.username, // changed from config.db.user
+    config.db.password,
+    config.db.options
+    //   config.db.port,
+    //   config.db.host
+  )
+}
+
+// if process.env.DEPLOYED === "True":
+// //     const sequelize = new Sequelize('postgresql://postgres:fOhlCynBOOsamqIJwWpQenFFiUzmJOSS@roundhouse.proxy.rlwy.net:25224/railway')
+// //     else
+// // c
 
 fs
   .readdirSync(__dirname)
