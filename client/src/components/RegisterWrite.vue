@@ -21,7 +21,7 @@ import AuthenticationService from '@/services/AuthenticationService';
 export default {
   data () {
     return  {
-      email: 'john.do@email.com',
+      email: 'john.doe@email.com',
       password: 'super-secret'
     };
   },

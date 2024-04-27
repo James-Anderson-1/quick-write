@@ -1,4 +1,6 @@
 console.log('hello')
+console.log('Running with Enviroment Variables:')
+console.log(process.env)
 const express = require('express')
 const bodyParser = require('body-parser')
 const cors = require('cors')
