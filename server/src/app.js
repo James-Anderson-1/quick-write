@@ -23,7 +23,7 @@ app.get('/status', (req, res) => {
 
 app.post('/register', (req, res) => {
   res.send({
-    message: `hello ${req.body.email}!`
+    message: `Hello! You are registered with email: ${req.body.email}!`
   })
 })
 
