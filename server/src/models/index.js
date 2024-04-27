@@ -24,8 +24,10 @@ fs
     file.slice(-3) === '.js' // Filter out only JavaScript files
   )
   .forEach((file) => {
+    const modelName = file.replace('.js', '') // Get the model name from the filename
     const model = require(path.join(__dirname, file))(sequelize, Sequelize)
-    console.log(model)
+    console.log('Model File Name:', modelName) // Log the model name for debugging
+    db[modelName] = model
   })
 
 db.sequelize = sequelize

@@ -6,6 +6,7 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const cors = require('cors')
 const morgan = require('morgan')
+const config = require('./config/config')
 
 console.log('Right Before sequelizer Stuff............')
 const { sequelize } = require('./models')
@@ -19,7 +20,7 @@ require('./routes')(app)
 
 sequelize.sync()
   .then(() => {
-    app.listen(process.env.PORT || 8081)
+    app.listen(config.port)
     console.log(`Running on port ${process.env.PORT}`)
     console.log('For local netwrok: http://localhost:8081')
   }
