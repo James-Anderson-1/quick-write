@@ -25,7 +25,7 @@ app.post('/register', (req, res) => {
   console.log(`Register End Point Hit. With Request: ${req}`)
 
   res.send({
-    message: `Hello! You are registered with email: ${req.body.email}!`
+    message: `Hello! You are registered with email: ${req.email}!`
   })
 })
 
