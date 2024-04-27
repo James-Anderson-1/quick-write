@@ -10,7 +10,7 @@
       <form>
         <input type="email" placeholder="user.name@domain" v-model="email"> <br>
         <input type="password" placeholder="super.secret" v-model="password"> <br>
-        <button>Register</button>
+        <button @click="register">Register</button>
       </form>
     </div>
   </template>
@@ -24,6 +24,11 @@ export default {
       email: 'john.do@email.com',
       password: 'super-secret'
     };
+  }, 
+  methods: {
+    register () {
+      console.log("Register button was clicked with: ", this.email, " and ", this.password)
+    }
   },
   watch: {
     email (value) {
