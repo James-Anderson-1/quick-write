@@ -7,7 +7,7 @@ const db = {}
 let sequelize
 
 if (process.env.DEPLOYED === 'True') {
-  sequelize = new Sequelize('postgresql://postgres:OZSWLEHAjcotbDxDnenUkEABzIjcVrHl@viaduct.proxy.rlwy.net:45112/railway')
+  sequelize = new Sequelize(process.env.POSTGRES_URL)
 } else {
   sequelize = new Sequelize(
     config.db.database,
