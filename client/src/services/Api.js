@@ -1,7 +1,7 @@
-import axious from 'axious';
+import axios from 'axios';
 
 export default () => {
-  return axious.create({
+  return axios.create({
     baseURL: 'https://james-anderson-quick-write-backend.up.railway.app'
   });
 };
