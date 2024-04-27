@@ -8,7 +8,6 @@ module.exports = {
       host: process.env.HOST || 'localhost',
       port: process.env.DB_PORT || '5433',
       dialect: process.env.DIALECT || 'postgres'
-      // storage: '99999'
     }
   }
 }
