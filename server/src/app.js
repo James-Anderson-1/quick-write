@@ -22,10 +22,10 @@ app.get('/status', (req, res) => {
 })
 
 app.post('/register', (req, res) => {
-  console.log(`Register End Point Hit. With Request: ${req}`)
+  console.log(`Register End Point Hit. With Request: ${req.body.email}`)
 
   res.send({
-    message: `Hello! You are registered with email: ${req.email}!`
+    message: `Hello! You are registered with email: ${req.body.email}!`
   })
 })
 
