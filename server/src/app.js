@@ -22,11 +22,13 @@ app.get('/status', (req, res) => {
 })
 
 app.post('/register', (req, res) => {
+  console.log(`Register End Point Hit. With Request: ${req}`)
+
   res.send({
     message: `Hello! You are registered with email: ${req.body.email}!`
   })
 })
 
 app.listen(process.env.PORT || 8081)
-console.log("Running on port 8081")
-console.log("For local netwrok: http://localhost:8081")
+console.log('Running on port 8081')
+console.log('For local netwrok: http://localhost:8081')
