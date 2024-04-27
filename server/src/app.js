@@ -9,7 +9,7 @@ app.use(morgan('combined'))
 app.use(bodyParser.json())
 app.use(cors())
 
-app.get('/', (req, res) => {
+app.get('', (req, res) => {
   res.send({
     message: 'Hello There, are you ready to code!'
   })
@@ -28,3 +28,5 @@ app.post('/register', (req, res) => {
 })
 
 app.listen(process.env.PORT || 8081)
+console.log("Running on port 8081")
+console.log("For local netwrok: http://localhost:8081")
