@@ -11,18 +11,11 @@ if (process.env.DEPLOYED === 'True') {
 } else {
   sequelize = new Sequelize(
     config.db.database,
-    config.db.username, // changed from config.db.user
+    config.db.username,
     config.db.password,
     config.db.options
-    //   config.db.port,
-    //   config.db.host
   )
 }
-
-// if process.env.DEPLOYED === "True":
-// //     const sequelize = new Sequelize('postgresql://postgres:fOhlCynBOOsamqIJwWpQenFFiUzmJOSS@roundhouse.proxy.rlwy.net:25224/railway')
-// //     else
-// // c
 
 fs
   .readdirSync(__dirname)
