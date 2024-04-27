@@ -3,8 +3,8 @@ const { user } = require('../models')
 module.exports = {
   async register (req, res) {
     console.log(`Register End Point Hit. With Request: ${req.body.email}`)
-    try {
     const userData = await user.create(req.body)
+    try {
       res.send(userData.toJSON())
     } catch (err) {
       res.status(400).send({
