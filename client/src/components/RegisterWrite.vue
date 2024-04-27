@@ -17,7 +17,7 @@
 
 <script>
 // import { watch } from 'vue';
-
+import AuthenticationService from '@/services/AuthenticationService';
 export default {
   data () {
     return  {
@@ -26,8 +26,13 @@ export default {
     };
   },
   methods: {
-    register () {
+    async register () {
+      const  response = await AuthenticationService.register({
+        email: this.email,
+        password: this.password
+      });
       console.log('Register button was clicked with: ', this.email, ' and ', this.password);
+      console.log(`Response from backend: ${response}`);
     }
   },
   watch: {
