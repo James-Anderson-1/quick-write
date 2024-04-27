@@ -1,6 +1,8 @@
 console.log('hello')
 console.log('Running with Enviroment Variables:')
 console.log(process.env)
+console.log('Pulling Railway Enviroment Varaible')
+console.log(process.env.TEST_ENV_VARIABLE || 'failed to pull env var ')
 const express = require('express')
 const bodyParser = require('body-parser')
 const cors = require('cors')
