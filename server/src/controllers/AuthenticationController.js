@@ -9,8 +9,8 @@ module.exports = {
     console.log('Model User: ', User)
     console.log('Model grape: ', grape)
 
-    const userData = await User.create(req.body)
     try {
+      const userData = await User.create(req.body)
       res.send(userData.toJSON())
     } catch (err) {
       res.status(400).send({
